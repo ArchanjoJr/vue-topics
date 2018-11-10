@@ -1,13 +1,17 @@
 <template>
     <div id='resul'>
-        <b> RESULTADO APARECERA AQUI</b><br/>
-        <b> RESULTADO APARECERA AQUI</b><br/>
-        <b> RESULTADO APARECERA AQUI</b>
+        <b> {{parseInt(a) + parseInt(b)}}</b><br/>
+        <b> {{a - b}}</b><br/>
+        <b> {{a * b}}</b>
     </div>
 </template>
 <script>
 
 export default {
-    name: 'Resultado'
+    name: 'Resultado',
+    props : {
+        a: Number,
+        b: Number,
+    }
 }
 </script>
